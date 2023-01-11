@@ -14,8 +14,7 @@
 #define false 0
 #define true 1
 
-typedef struct card
-{
+typedef struct card{
     int color;
     int num;
     struct card *pre;
@@ -37,11 +36,12 @@ typedef struct record_turn{
     struct record_turn *next;
 }record_turn;
 
-extern int initial(card *player[]);
+extern int initial(card *handcard[], card *record_handcard[]);
 extern void printcard(int who, card *handcard);
 extern card *radix_sort(card *be_sorted);
 extern int choose( int cardmuch,int start, card **handcard, card_point **recordpoint, record_turn **recordturn, int turn);
 extern int play_or_not(int n, int start, card *be_judged, card_point **record_point);
 extern void record_func(record_turn **recordturn, int turn, int start, int n, card *played);
-
+extern void save_to_file(card *record_handcard[], record_turn *recordturn);
+extern int load(card *handcard[],record_turn **recordturn);
 #endif

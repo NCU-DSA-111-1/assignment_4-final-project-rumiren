@@ -56,6 +56,7 @@ int choose( int cardmuch,int start, card **handcard, card_point **recordpoint, r
     if(Standard == true){
         printcard(0, tmp2);
         record_func(recordturn, turn, start, cardmuch, tmp2);
+        //printf("%d %d %d\n", (*recordturn)->turn, (*recordturn)->start, (*recordturn)->n);
     }
     else{
         tmp = *handcard;
