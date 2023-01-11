@@ -19,6 +19,7 @@ gcc -o main main.c sort.c judge.c fp.h initial.c print.c choose.c save.c
 
 ## Explain txt file
 ex:
+
 2 3 3 3 2 4 4 4 1 5 2 5 3 5 2 9 4 10 2 11 1 12 2 13 3 13 
 
 2 6 4 6 1 7 2 7 3 7 1 8 4 8 3 9 4 9 3 11 2 12 4 12 4 13 
